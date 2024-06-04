@@ -6,7 +6,7 @@ export default function Signup() {
           <h1 className="block text-2xl font-bold text-gray-800">Sign up</h1>
           <div className="flex mt-2">
             <p className="pr-5 text-sm text-gray-600 dark:text-neutral-400"> Already have a account? </p>
-            <a className="text-blue-600 text-sm decoration-2 hover:underline font-medium dark:text-blue-500" href="../examples/html/signup.html">
+            <a className="text-blue-600 text-sm decoration-2 hover:underline font-medium dark:text-blue-500" href="/authenticate/signin">
               Sign in here
             </a>
           </div>

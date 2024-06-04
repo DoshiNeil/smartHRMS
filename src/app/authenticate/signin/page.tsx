@@ -8,7 +8,7 @@ export default function siginin(){
             <p className="pr-5 text-sm text-gray-600 dark:text-neutral-400">
               Don't have an account yet?
             </p>
-              <a className="text-blue-600 text-sm decoration-2 hover:underline font-medium dark:text-blue-500" href="../examples/html/signup.html">
+              <a className="text-blue-600 text-sm decoration-2 hover:underline font-medium dark:text-blue-500" href="/authenticate/signup">
                 Sign up here
               </a>
           </div>
@@ -44,7 +44,7 @@ export default function siginin(){
               <div>
                 <div className="flex justify-between items-center">
                   <label htmlFor="password" className="block text-sm mb-2 dark:text-white">Password</label>
-                  <a className="text-sm text-blue-600 decoration-2 hover:underline font-medium" href="../examples/html/recover-account.html">Forgot password?</a>
+                  <a className="text-sm text-blue-600 decoration-2 hover:underline font-medium" href="/authenticate/forgotpassword">Forgot password?</a>
                 </div>
                 <div className="relative">
                   <input type="password" id="password" name="password" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" required aria-describedby="password-error"/>
