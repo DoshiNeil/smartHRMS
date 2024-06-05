@@ -1,13 +1,10 @@
-import { ChevronDown, ChevronUp } from "react-feather";
+import { ChevronDown, ChevronUp } from 'react-feather';
 
 export default function AccordionToggleIcon() {
-
-  return(
-   <>
-      <ChevronUp className="hs-accordion-active:block ms-auto hidden size-4"/>
-      <ChevronDown className="hs-accordion-active:hidden ms-auto block size-4"/>
-   </>
-
+  return (
+    <>
+      <ChevronUp className='ms-auto hidden size-4 hs-accordion-active:block' />
+      <ChevronDown className='ms-auto block size-4 hs-accordion-active:hidden' />
+    </>
   );
-
 }
