@@ -2,3 +2,11 @@
 
 using nextjs 14 + preline to build a hrms ui 
 
+
+### TODO list 
+[ ] Choose a icon pack to use and substitute all the icons here
+[ ] Get a logo generated with small and icon size and add them to the repo
+[ ] Split the  dashboard page into various components 
+------
+[ ] On completing the above, focus on creating profile page (please refer pro page designs ) 
+

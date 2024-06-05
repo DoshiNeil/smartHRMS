@@ -8,14 +8,15 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines":{
+  "engines": {
     "node": "18.x"
   },
   "dependencies": {
     "next": "14.2.3",
     "preline": "^2.3.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
