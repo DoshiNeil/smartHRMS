@@ -1,13 +1,11 @@
-import Logo from "@@/svgs/logo";
-import { Activity, Bell, Download, Search, ShoppingBag, Users } from "react-feather";
+import Logo from '@@/svgs/logo';
+import { Activity, Bell, Download, Search, ShoppingBag, Users } from 'react-feather';
+import SearchBox from './SearchBox';
 
 export default function Header() {
   return (
     <header className='sticky inset-x-0 top-0 z-[48] flex w-full flex-wrap border-b bg-white py-2.5 text-sm sm:flex-nowrap sm:justify-start sm:py-4 lg:ps-64 dark:border-neutral-700 dark:bg-neutral-800'>
-      <nav
-        className='mx-auto flex w-full basis-full items-center px-4 sm:px-6'
-        aria-label='Global'
-      >
+      <nav className='mx-auto flex w-full basis-full items-center px-4 sm:px-6' aria-label='Global'>
         <div className='me-5 lg:me-0 lg:hidden'>
           <a
             className='inline-block flex-none rounded-xl text-xl font-semibold focus:opacity-80 focus:outline-none'
@@ -28,24 +26,7 @@ export default function Header() {
             </button>
           </div>
 
-          <div className='hidden sm:block'>
-            <label htmlFor='icon' className='sr-only'>
-              Search
-            </label>
-            <div className='relative min-w-72 md:min-w-80'>
-              <div className='pointer-events-none absolute inset-y-0 start-0 z-20 flex items-center ps-4'>
-                <Search width={18} height={18} color='grey' />
-              </div>
-              <input
-                type='text'
-                id='icon'
-                name='icon'
-                className='block w-full rounded-lg border-gray-200 px-4 py-2 ps-11 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600'
-                placeholder='Search'
-              />
-            </div>
-          </div>
-
+         <SearchBox/> 
           <div className='flex flex-row items-center justify-end gap-2'>
             <button
               type='button'
@@ -121,4 +102,4 @@ export default function Header() {
       </nav>
     </header>
   );
-};
+}
