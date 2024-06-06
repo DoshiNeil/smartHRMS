@@ -1,14 +1,21 @@
-import Logo from "@@/svgs/logo";
-import { BookOpen, Briefcase, Calendar, ChevronRight, ChevronsRight, Home, User, Users } from "react-feather";
-import AccordionToggleIcon from "../AccordionToggleIcon/AccordionToggleIcon";
+import Logo from '@@/svgs/logo';
+import {
+  BookOpen,
+  Briefcase,
+  Calendar,
+  ChevronRight,
+  ChevronsRight,
+  Home,
+  User,
+  Users,
+} from 'react-feather';
+import AccordionToggleIcon from '../AccordionToggleIcon/AccordionToggleIcon';
 
-export default function Sidebar() 
-{
-
-  return(
+export default function Sidebar() {
+  return (
     <>
       <div className='sticky inset-x-0 top-0 z-20 border-y bg-white px-4 sm:px-6 md:px-8 lg:hidden dark:border-neutral-700 dark:bg-neutral-800'>
-        { /** breadcrumbs in mobile view **/ }
+        {/** breadcrumbs in mobile view **/}
         <div className='flex items-center justify-between py-2'>
           <ol className='ms-3 flex items-center whitespace-nowrap'>
             <li className='flex items-center text-sm text-gray-800 dark:text-neutral-400'>
@@ -302,4 +309,4 @@ export default function Sidebar()
       </div>
     </>
   );
-};
+}

@@ -1,6 +1,6 @@
 import { Search } from 'react-feather';
 
-export default function() {
+export default function () {
   return (
     <div className='hidden sm:block'>
       <label htmlFor='icon' className='sr-only'>

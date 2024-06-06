@@ -26,7 +26,7 @@ export default function Header() {
             </button>
           </div>
 
-         <SearchBox/> 
+          <SearchBox />
           <div className='flex flex-row items-center justify-end gap-2'>
             <button
               type='button'
