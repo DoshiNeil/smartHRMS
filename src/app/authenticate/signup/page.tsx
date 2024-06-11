@@ -3,7 +3,9 @@ export default function Signup() {
     <div className='mt-7 rounded-xl border border-gray-200 bg-white shadow-sm'>
       <div className='p-22 sm:p-7'>
         <div className='text-center'>
-          <h1 className='block text-2xl font-bold text-gray-800'>Sign up</h1>
+          <h1 className='block text-2xl font-bold text-gray-800'>
+            Sign up
+          </h1>
           <div className='mt-2 flex'>
             <p className='pr-5 text-sm text-gray-600 dark:text-neutral-400'>
               {' '}
@@ -23,7 +25,13 @@ export default function Signup() {
             type='button'
             className='inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50'
           >
-            <svg className='h-auto w-4' width='46' height='47' viewBox='0 0 46 47' fill='none'>
+            <svg
+              className='h-auto w-4'
+              width='46'
+              height='47'
+              viewBox='0 0 46 47'
+              fill='none'
+            >
               <path
                 d='M46 24.0287C46 22.09 45.8533 20.68 45.5013 19.2112H23.4694V27.9356H36.4069C36.1429 30.1094 34.7347 33.37 31.5957 35.5731L31.5663 35.8669L38.5191 41.2719L38.9885 41.3306C43.4477 37.2181 46 31.1669 46 24.0287Z'
                 fill='#4285F4'
@@ -76,13 +84,20 @@ export default function Signup() {
                     </svg>
                   </div>
                 </div>
-                <p className='mt-2 hidden text-xs text-red-600' id='email-error'>
-                  Please include a valid email address so we can get back to you
+                <p
+                  className='mt-2 hidden text-xs text-red-600'
+                  id='email-error'
+                >
+                  Please include a valid email address so we can get
+                  back to you
                 </p>
               </div>
 
               <div>
-                <label htmlFor='password' className='mb-2 block text-sm'>
+                <label
+                  htmlFor='password'
+                  className='mb-2 block text-sm'
+                >
                   Password
                 </label>
                 <div className='relative'>
@@ -107,13 +122,19 @@ export default function Signup() {
                     </svg>
                   </div>
                 </div>
-                <p className='mt-2 hidden text-xs text-red-600' id='password-error'>
+                <p
+                  className='mt-2 hidden text-xs text-red-600'
+                  id='password-error'
+                >
                   8+ characters required
                 </p>
               </div>
 
               <div>
-                <label htmlFor='confirm-password' className='mb-2 block text-sm'>
+                <label
+                  htmlFor='confirm-password'
+                  className='mb-2 block text-sm'
+                >
                   Confirm Password
                 </label>
                 <div className='relative'>
@@ -138,7 +159,10 @@ export default function Signup() {
                     </svg>
                   </div>
                 </div>
-                <p className='mt-2 hidden text-xs text-red-600' id='confirm-password-error'>
+                <p
+                  className='mt-2 hidden text-xs text-red-600'
+                  id='confirm-password-error'
+                >
                   Password does not match the password
                 </p>
               </div>
@@ -155,7 +179,10 @@ export default function Signup() {
                 <div className='ms-3'>
                   <label htmlFor='remember-me' className='text-sm'>
                     I accept the{' '}
-                    <a className='font-medium text-blue-600 decoration-2 hover:underline' href='#'>
+                    <a
+                      className='font-medium text-blue-600 decoration-2 hover:underline'
+                      href='#'
+                    >
                       Terms and Conditions
                     </a>
                   </label>

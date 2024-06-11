@@ -21,7 +21,12 @@ export default function Sidebar() {
             <li className='flex items-center text-sm text-gray-800 dark:text-neutral-400'>
               Home
               <div className='px-2'>
-                <ChevronRight strokeWidth={2} width={18} height={18} color='grey' />
+                <ChevronRight
+                  strokeWidth={2}
+                  width={18}
+                  height={18}
+                  color='grey'
+                />
               </div>
             </li>
             <li
@@ -86,8 +91,14 @@ export default function Sidebar() {
                 id='users-accordion-child'
                 className='hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300'
               >
-                <ul className='hs-accordion-group ps-3 pt-2' data-hs-accordion-always-open>
-                  <li className='hs-accordion' id='users-accordion-sub-1'>
+                <ul
+                  className='hs-accordion-group ps-3 pt-2'
+                  data-hs-accordion-always-open
+                >
+                  <li
+                    className='hs-accordion'
+                    id='users-accordion-sub-1'
+                  >
                     <button
                       type='button'
                       className='hs-accordion-toggle flex w-full items-center gap-x-3.5 rounded-lg px-2.5 py-2 text-start text-sm text-neutral-700 hover:bg-gray-100 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white'
@@ -128,7 +139,10 @@ export default function Sidebar() {
                       </ul>
                     </div>
                   </li>
-                  <li className='hs-accordion' id='users-accordion-sub-2'>
+                  <li
+                    className='hs-accordion'
+                    id='users-accordion-sub-2'
+                  >
                     <button
                       type='button'
                       className='hs-accordion-toggle flex w-full items-center gap-x-3.5 rounded-lg px-2.5 py-2 text-start text-sm text-neutral-700 hover:bg-gray-100 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white'

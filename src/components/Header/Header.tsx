@@ -1,11 +1,21 @@
 import Logo from '@@/svgs/logo';
-import { Activity, Bell, Download, Search, ShoppingBag, Users } from 'react-feather';
+import {
+  Activity,
+  Bell,
+  Download,
+  Search,
+  ShoppingBag,
+  Users,
+} from 'react-feather';
 import SearchBox from './SearchBox';
 
 export default function Header() {
   return (
     <header className='sticky inset-x-0 top-0 z-[48] flex w-full flex-wrap border-b bg-white py-2.5 text-sm sm:flex-nowrap sm:justify-start sm:py-4 lg:ps-64 dark:border-neutral-700 dark:bg-neutral-800'>
-      <nav className='mx-auto flex w-full basis-full items-center px-4 sm:px-6' aria-label='Global'>
+      <nav
+        className='mx-auto flex w-full basis-full items-center px-4 sm:px-6'
+        aria-label='Global'
+      >
         <div className='me-5 lg:me-0 lg:hidden'>
           <a
             className='inline-block flex-none rounded-xl text-xl font-semibold focus:opacity-80 focus:outline-none'
@@ -60,7 +70,9 @@ export default function Header() {
                 aria-labelledby='hs-dropdown-with-header'
               >
                 <div className='-m-2 rounded-t-lg bg-gray-100 px-5 py-3 dark:bg-neutral-800'>
-                  <p className='text-sm text-gray-500 dark:text-neutral-400'>Signed in as</p>
+                  <p className='text-sm text-gray-500 dark:text-neutral-400'>
+                    Signed in as
+                  </p>
                   <p className='text-sm font-medium text-gray-800 dark:text-neutral-300'>
                     james@site.com
                   </p>
