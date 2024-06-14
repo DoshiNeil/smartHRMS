@@ -1,4 +1,5 @@
 import Form from '@@/components/form';
+import Name, { NameFieldType } from '@@/components/form/Name';
 import Salutation, {
   SalutationOptionType,
   SalutationOptions,
@@ -10,6 +11,9 @@ export default function PersonalDetails() {
 
   const handleSalutationUpdate = (value: SalutationOptionType) =>
     setPersonalDetails((prev) => ({ ...prev, salutation: value }));
+
+  const handleNameUpdate= (value: NameFieldType) =>
+    setPersonalDetails((prev) => ({ ...prev, name: value }));
 
   return (
     <div className='flex flex-col rounded-xl border bg-white shadow-sm dark:border-neutral-700 dark:bg-neutral-900 dark:shadow-neutral-700/70'>
@@ -26,6 +30,9 @@ export default function PersonalDetails() {
         <Salutation
           updateSalutation={handleSalutationUpdate}
           defaultValue={SalutationOptions.mr}
+        />
+        <Name
+          updateName={handleNameUpdate}
         />
       </Form>
     </div>

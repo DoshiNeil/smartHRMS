@@ -8,7 +8,7 @@ export const SalutationOptions = {
 } as const;
 
 export type SalutationOptionType =
-  | (typeof options)[keyof typeof options]
+  | (typeof SalutationOptions)[keyof typeof SalutationOptions]
   | null;
 
 type SalutationProps = {
@@ -20,7 +20,8 @@ const Salutation: React.FC<SalutationProps> = ({
   updateSalutation,
   defaultValue = null,
 }) => {
-  const [value, setValue] = useState<SalutationOptionType>(defaultValue);
+  const [value, setValue] =
+    useState<SalutationOptionType>(defaultValue);
   const handleChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
@@ -30,11 +31,11 @@ const Salutation: React.FC<SalutationProps> = ({
   useEffect(() => updateSalutation(value), [value]);
 
   return (
-    <>
-      <div className='grid p-4 md:col-span-2'>
+    <div className='grid  sm:grid-cols-1 md:grid-cols-6'>
+      <div className='grid md:col-span-2'>
         <label className=''> Salutation </label>
       </div>
-      <div className='grid p-4 md:col-span-4'>
+      <div className='grid md:col-span-4'>
         <select
           value={value as string}
           onChange={handleChange}
@@ -47,7 +48,7 @@ const Salutation: React.FC<SalutationProps> = ({
           ))}
         </select>
       </div>
-    </>
+    </div>
   );
 };
 
