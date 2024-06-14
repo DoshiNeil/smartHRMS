@@ -1,3 +1,4 @@
+import Form from '@@/components/form';
 import Salutation, {
   SalutationOptionType,
   SalutationOptions,
@@ -21,12 +22,12 @@ export default function PersonalDetails() {
         </h6>
       </div>
       {/** form **/}
-      <div className='grid p-4 sm:grid-cols-1 md:grid-cols-6'>
+      <Form>
         <Salutation
           updateSalutation={handleSalutationUpdate}
           defaultValue={SalutationOptions.mr}
         />
-      </div>
+      </Form>
     </div>
   );
 }
