@@ -1,3 +1,5 @@
+"use client"
+
 import PersonalDetails from './PersonalDetails';
 import ProfileHeaderSection from './ProfileHeaderSection';
 
