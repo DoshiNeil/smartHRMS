@@ -4,7 +4,7 @@ import Salutation, {
   SalutationOptionType,
   SalutationOptions,
 } from '@@/components/form/Salutation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function PersonalDetails() {
   const [personalDetails, setPersonalDetails] = useState<Object>();
@@ -12,8 +12,11 @@ export default function PersonalDetails() {
   const handleSalutationUpdate = (value: SalutationOptionType) =>
     setPersonalDetails((prev) => ({ ...prev, salutation: value }));
 
-  const handleNameUpdate= (value: NameFieldType) =>
+  const handleNameUpdate = (value: NameFieldType) =>
     setPersonalDetails((prev) => ({ ...prev, name: value }));
+
+  // loggin to test development
+  useEffect(() => console.log(personalDetails), [personalDetails]);
 
   return (
     <div className='flex flex-col rounded-xl border bg-white shadow-sm dark:border-neutral-700 dark:bg-neutral-900 dark:shadow-neutral-700/70'>
