@@ -40,7 +40,6 @@ const Salutation: React.FC<SalutationProps> = ({
           onChange={handleChange}
           className='block w-full rounded-lg border-transparent bg-gray-100 px-4 py-3 pe-9 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50 lg:w-2/3 dark:border-transparent dark:bg-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600'
         >
-          <option value=''>Select a salutation for yourself</option>
           {Object.entries(SalutationOptions).map(([k, v]) => (
             <option key={k} value={v}>
               {v}
