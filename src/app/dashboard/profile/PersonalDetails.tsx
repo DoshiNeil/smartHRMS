@@ -1,4 +1,5 @@
 import Form from '@@/components/form';
+import DOB from '@@/components/form/DOB';
 import Name, { NameFieldType } from '@@/components/form/Name';
 import Salutation, {
   SalutationOptionType,
@@ -14,6 +15,9 @@ export default function PersonalDetails() {
 
   const handleNameUpdate = (value: NameFieldType) =>
     setPersonalDetails((prev) => ({ ...prev, name: value }));
+
+  const handleDOBUpdate = (value: Date) =>
+    setPersonalDetails((prev) => ({ ...prev, dob: value }));
 
   // loggin to test development
   useEffect(() => console.log(personalDetails), [personalDetails]);
@@ -34,9 +38,8 @@ export default function PersonalDetails() {
           updateSalutation={handleSalutationUpdate}
           defaultValue={SalutationOptions.mr}
         />
-        <Name
-          updateName={handleNameUpdate}
-        />
+        <Name updateName={handleNameUpdate} />
+        <DOB updateDate={handleDOBUpdate} />
       </Form>
     </div>
   );
