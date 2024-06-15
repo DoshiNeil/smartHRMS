@@ -3,7 +3,9 @@ export default function ForgotPassword() {
     <div className='mt-7 rounded-xl border border-gray-200 bg-white shadow-sm'>
       <div className='p-4 sm:p-7'>
         <div className='text-center'>
-          <h1 className='block text-2xl font-bold text-gray-800'>Forgot password?</h1>
+          <h1 className='block text-2xl font-bold text-gray-800'>
+            Forgot password?
+          </h1>
           <div className='mt-2 flex'>
             <p className='pr-5 text-sm text-gray-600 dark:text-neutral-400'>
               Don't have an account yet?
@@ -45,8 +47,12 @@ export default function ForgotPassword() {
                     </svg>
                   </div>
                 </div>
-                <p className='mt-2 hidden text-xs text-red-600' id='email-error'>
-                  Please include a valid email address so we can get back to you
+                <p
+                  className='mt-2 hidden text-xs text-red-600'
+                  id='email-error'
+                >
+                  Please include a valid email address so we can get
+                  back to you
                 </p>
               </div>
 

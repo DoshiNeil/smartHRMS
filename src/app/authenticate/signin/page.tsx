@@ -3,7 +3,9 @@ export default function siginin() {
     <div className='mt-7 rounded-xl border border-gray-200 bg-white shadow-sm dark:border-neutral-700 dark:bg-neutral-900'>
       <div className='p-2 sm:p-7'>
         <div className='text-center'>
-          <h1 className='block text-2xl font-bold text-gray-800 dark:text-white'>Sign in</h1>
+          <h1 className='block text-2xl font-bold text-gray-800 dark:text-white'>
+            Sign in
+          </h1>
           <div className='mt-2 flex'>
             <p className='pr-5 text-sm text-gray-600 dark:text-neutral-400'>
               Don't have an account yet?
@@ -21,7 +23,13 @@ export default function siginin() {
             type='button'
             className='inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800'
           >
-            <svg className='h-auto w-4' width='46' height='47' viewBox='0 0 46 47' fill='none'>
+            <svg
+              className='h-auto w-4'
+              width='46'
+              height='47'
+              viewBox='0 0 46 47'
+              fill='none'
+            >
               <path
                 d='M46 24.0287C46 22.09 45.8533 20.68 45.5013 19.2112H23.4694V27.9356H36.4069C36.1429 30.1094 34.7347 33.37 31.5957 35.5731L31.5663 35.8669L38.5191 41.2719L38.9885 41.3306C43.4477 37.2181 46 31.1669 46 24.0287Z'
                 fill='#4285F4'
@@ -49,7 +57,10 @@ export default function siginin() {
           <form>
             <div className='grid gap-y-4'>
               <div>
-                <label htmlFor='email' className='mb-2 block text-sm dark:text-white'>
+                <label
+                  htmlFor='email'
+                  className='mb-2 block text-sm dark:text-white'
+                >
                   Email address
                 </label>
                 <div className='relative'>
@@ -74,14 +85,21 @@ export default function siginin() {
                     </svg>
                   </div>
                 </div>
-                <p className='mt-2 hidden text-xs text-red-600' id='email-error'>
-                  Please include a valid email address so we can get back to you
+                <p
+                  className='mt-2 hidden text-xs text-red-600'
+                  id='email-error'
+                >
+                  Please include a valid email address so we can get
+                  back to you
                 </p>
               </div>
 
               <div>
                 <div className='flex items-center justify-between'>
-                  <label htmlFor='password' className='mb-2 block text-sm dark:text-white'>
+                  <label
+                    htmlFor='password'
+                    className='mb-2 block text-sm dark:text-white'
+                  >
                     Password
                   </label>
                   <a
@@ -113,7 +131,10 @@ export default function siginin() {
                     </svg>
                   </div>
                 </div>
-                <p className='mt-2 hidden text-xs text-red-600' id='password-error'>
+                <p
+                  className='mt-2 hidden text-xs text-red-600'
+                  id='password-error'
+                >
                   8+ characters required
                 </p>
               </div>
@@ -128,7 +149,10 @@ export default function siginin() {
                   />
                 </div>
                 <div className='ms-3'>
-                  <label htmlFor='remember-me' className='text-sm dark:text-white'>
+                  <label
+                    htmlFor='remember-me'
+                    className='text-sm dark:text-white'
+                  >
                     Remember me
                   </label>
                 </div>
