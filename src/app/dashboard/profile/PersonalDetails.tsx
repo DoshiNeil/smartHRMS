@@ -1,11 +1,11 @@
 import Form from '@@/components/form';
 import DOB from '@@/components/form/DOB';
 import Email from '@@/components/form/Email';
+import Gender, { GenderOptionType } from '@@/components/form/Gender';
 import Name, { NameFieldType } from '@@/components/form/Name';
 import PhoneNumber from '@@/components/form/PhoneNumber';
 import Salutation, {
   SalutationOptionType,
-  SalutationOptions,
 } from '@@/components/form/Salutation';
 import { useEffect, useState } from 'react';
 
@@ -23,6 +23,9 @@ export default function PersonalDetails() {
 
   const handleEmailUpdate = (value: string) =>
     setPersonalDetails((prev) => ({ ...prev, email: value }));
+
+  const handleGenderUpdate = (value: GenderOptionType) =>
+    setPersonalDetails((prev) => ({ ...prev, gender: value }));
 
   const handlePhoneUpdate = (
     value: string,
@@ -55,10 +58,7 @@ export default function PersonalDetails() {
       </div>
       {/** form **/}
       <Form>
-        <Salutation
-          updateSalutation={handleSalutationUpdate}
-          defaultValue={SalutationOptions.mr}
-        />
+        <Salutation updateSalutation={handleSalutationUpdate} />
         <Name updateName={handleNameUpdate} />
         <DOB updateDate={handleDOBUpdate} />
         <Email updateEmail={handleEmailUpdate} />
@@ -70,6 +70,7 @@ export default function PersonalDetails() {
           updatePhoneNumber={handlePhoneUpdate}
           phoneType='secondary'
         />
+        <Gender updateGender={handleGenderUpdate} />
       </Form>
     </div>
   );
