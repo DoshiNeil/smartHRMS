@@ -1,6 +1,8 @@
 import Form from '@@/components/form';
 import DOB from '@@/components/form/DOB';
+import Email from '@@/components/form/Email';
 import Name, { NameFieldType } from '@@/components/form/Name';
+import PhoneNumber from '@@/components/form/PhoneNumber';
 import Salutation, {
   SalutationOptionType,
   SalutationOptions,
@@ -18,6 +20,25 @@ export default function PersonalDetails() {
 
   const handleDOBUpdate = (value: Date) =>
     setPersonalDetails((prev) => ({ ...prev, dob: value }));
+
+  const handleEmailUpdate = (value: string) =>
+    setPersonalDetails((prev) => ({ ...prev, email: value }));
+
+  const handlePhoneUpdate = (
+    value: string,
+    type: 'primary' | 'secondary'
+  ) => {
+    type === 'primary' &&
+      setPersonalDetails((prev) => ({
+        ...prev,
+        primaryPhoneNumber: value,
+      }));
+    type === 'secondary' &&
+      setPersonalDetails((prev) => ({
+        ...prev,
+        secondaryPhoneNumber: value,
+      }));
+  };
 
   // loggin to test development
   useEffect(() => console.log(personalDetails), [personalDetails]);
@@ -40,6 +61,15 @@ export default function PersonalDetails() {
         />
         <Name updateName={handleNameUpdate} />
         <DOB updateDate={handleDOBUpdate} />
+        <Email updateEmail={handleEmailUpdate} />
+        <PhoneNumber
+          updatePhoneNumber={handlePhoneUpdate}
+          phoneType='primary'
+        />
+        <PhoneNumber
+          updatePhoneNumber={handlePhoneUpdate}
+          phoneType='secondary'
+        />
       </Form>
     </div>
   );
